@@ -12,10 +12,10 @@
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>Montana</header>
     <main>
         <picture>
-            <source srcset="images/montanna-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/montanna-large.webp" media="(min-width: 500px)">
             <img src="images/montanna-small-frans-van-heerden.webp" alt="Picture of Montana">
         </picture>
         <div id="data" class="container">
@@ -49,18 +49,19 @@
             <img src="images/sun-icon.svg" alt="Sun Icon">
             <ul>
                 <li>
-                    <p><b>Temp:</b> <span id="temp"></span></p>
+                    <p><b>Temp:</b> <span id="temp">50</span> °F</p>
                 </li>
                 <li>
-                    <p><b>Conditions:</b> <span id="cond"></span></p>
+                    <p><b>Conditions:</b> <span id="cond">Sunny</span></p>
                 </li>
                 <li>
-                    <p><b>Wind:</b> <span id="wind"></span></p>
+                    <p><b>Wind:</b> <span id="wind">5</span> mph</p>
                 </li>
                 <li>
                     <p><b>Wind Chill:</b> <span id="windChill"></span></p>
                 </li>
             </ul>
+            <p class="disclaimer">Weather based on Helena.</p>
         </div>
     </main>
     <footer>
