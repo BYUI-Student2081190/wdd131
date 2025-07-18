@@ -1,4 +1,11 @@
 /* Base View for Site */
+:root {
+    --primary-color: #8A9A5B;
+    --secondary-color: #FFFDD0;
+    --base-font-color: #000000;
+    --secondary-font-color: #373737;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +20,14 @@ footer p {
 
 body {
     font-family: "Roboto Condensed", sans-serif;
+    color: var(--base-font-color);
 }
 
 header {
-    background-color: #8A9A5B;
+    background-color: var(--primary-color);
     text-align: center;
     padding: 1.5em;
-    border-bottom: 1em solid #FFFDD0;
+    border-bottom: 1em solid var(--secondary-color);
 }
 
 header h1 {
@@ -34,7 +42,7 @@ main {
 
 .hero {
     grid-area: 1/1;
-    border-bottom: 0.4em solid #8A9A5B;
+    border-bottom: 0.4em solid var(--primary-color);
 }
 
 .hero img {
@@ -93,7 +101,7 @@ main {
     text-align: center;
     font-size: medium;
     font-style: italic;
-    color: #373737;
+    color: var(--secondary-font-color);
     margin-top: 1.5em;
 }
 
@@ -103,7 +111,7 @@ main {
     justify-self: center;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #8A9A5B;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 #weather {
@@ -127,13 +135,12 @@ main {
 }
 
 footer {
-    background-color: #FFFDD0;
+    background-color: var(--secondary-color);
     text-align: center;
     padding: 1.5em 0;
 }
 
 footer p {
     font-size: large;
-    color: black;
     font-weight: bold;
 }

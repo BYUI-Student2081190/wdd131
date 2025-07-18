@@ -1,4 +1,11 @@
 /* Large View for Site */
+:root {
+    --primary-color: #8A9A5B;
+    --secondary-color: #FFFDD0;
+    --base-font-color: #000000;
+    --secondary-font-color: #373737;
+}
+
 @media screen and (min-width: 800px) {
     main {
         grid-template: 1fr / 1fr;
@@ -15,7 +22,7 @@
         padding: 0.5em 0 0.5em 0.5em;
         margin-right: 10%;
         text-align: start;
-        background-color: #FFFDD0;
+        background-color: var(--secondary-color);
     }
 
     .container {
@@ -41,7 +48,7 @@
         right: 2em;
     }
 
-    #emoji::before {
+    #emoji::after {
         content: "☀️";
     }
 
