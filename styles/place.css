@@ -6,7 +6,8 @@
 }
 
 h1,
-h2 {
+h2,
+footer p {
     font-family: "Roboto", sans-serif;
 }
 
@@ -92,7 +93,7 @@ main {
     text-align: center;
     font-size: medium;
     font-style: italic;
-    color: #626262;
+    color: #373737;
     margin-top: 1.5em;
 }
 
@@ -126,11 +127,13 @@ main {
 }
 
 footer {
-    background-color: #8A9A5B;
+    background-color: #FFFDD0;
     text-align: center;
     padding: 1.5em 0;
 }
 
 footer p {
     font-size: large;
+    color: black;
+    font-weight: bold;
 }
