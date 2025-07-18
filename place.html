@@ -12,55 +12,90 @@
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    <header>Montana</header>
+    <header>
+        <h1>Montana</h1>
+    </header>
     <main>
-        <picture>
-            <source srcset="images/montanna-large.webp" media="(min-width: 500px)">
+        <picture class="hero">
+            <source srcset="images/montanna-large.webp" media="(min-width: 800px)">
             <img src="images/montanna-small-frans-van-heerden.webp" alt="Picture of Montana">
         </picture>
         <div id="data" class="container">
             <h2>Data</h2>
-            <ul>
-                <li>
-                    <p><b>Area:</b> 380,832 sq km</p>
-                </li>
-                <li>
-                    <p><b>Population:</b> 1,137,000</p>
-                </li>
-                <li>
-                    <p><b>Capital:</b> Helena</p>
-                </li>
-                <li>
-                    <p><b>Language:</b> English</p>
-                </li>
-                <li>
-                    <p><b>Currency:</b> USD</p>
-                </li>
-                <li>
-                    <p><b>Time Zone:</b> MDT</p>
-                </li>
-                <li>
-                    <p><b>Calling Code:</b> +406</p>
-                </li>
-            </ul>
+            <dl>
+                <dt>
+                    <p><b>Area:</b></p>
+                </dt>
+                <dd>
+                    <p>380,832 sq km</p>
+                </dd>
+                <dt>
+                    <p><b>Population:</b></p>
+                </dt>
+                <dd>
+                    <p>1,137,000</p>
+                </dd>
+                <dt>
+                    <p><b>Capital:</b></p>
+                </dt>
+                <dd>
+                    <p>Helena</p>
+                </dd>
+                <dt>
+                    <p><b>Language:</b></p>
+                </dt>
+                <dd>
+                    <p>English</p>
+                </dd>
+                <dt>
+                    <p><b>Currency:</b></p>
+                </dt>
+                <dd>
+                    <p>USD</p>
+                </dd>
+                <dt>
+                    <p><b>Time Zone:</b></p>
+                </dt>
+                <dd>
+                    <p>MDT</p>
+                </dd>
+                <dt>
+                    <p><b>Calling Code:</b></p>
+                </dt>
+                <dd>
+                    <p>+406</p>
+                </dd>
+            </dl>
         </div>
         <div id="weather" class="container">
-            <h2>Weather</h2>
+            <h2>Weather <span id="emoji"></span></h2>
             <img src="images/sun-icon.svg" alt="Sun Icon">
-            <ul>
-                <li>
-                    <p><b>Temp:</b> <span id="temp">50</span> °F</p>
-                </li>
-                <li>
-                    <p><b>Conditions:</b> <span id="cond">Sunny</span></p>
-                </li>
-                <li>
-                    <p><b>Wind:</b> <span id="wind">5</span> mph</p>
-                </li>
-                <li>
-                    <p><b>Wind Chill:</b> <span id="windChill"></span></p>
-                </li>
-            </ul>
+            <dl>
+                <dt>
+                    <p><b>Temp:</b></p>
+                </dt>
+                <dd>
+                    <p><span id="temp">50</span> °F</p>
+                </dd>
+                <dt>
+                    <p><b>Conditions:</b></p>
+                </dt>
+                <dd>
+                    <p><span id="cond">Sunny</span></p>
+                </dd>
+                <dt>
+                    <p><b>Wind:</b></p>
+                </dt>
+                <dd>
+                    <p><span id="wind">5</span> mph</p>
+                </dd>
+                <dt>
+                    <p><b>Wind Chill:</b></p>
+                </dt>
+                <dd>
+                    <p><span id="windChill"></span></p>
+                </dd>
+            </dl>
             <p class="disclaimer">Weather based on Helena.</p>
         </div>
     </main>

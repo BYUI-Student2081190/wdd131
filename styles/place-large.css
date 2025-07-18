@@ -1,0 +1,51 @@
+/* Large View for Site */
+@media screen and (min-width: 800px) {
+    main {
+        grid-template: 1fr / 1fr;
+    }
+
+    .hero {
+        grid-area: 1/1;
+        border-bottom: 0;
+    }
+
+    .container h2 {
+        position: relative;
+        right: 0.5em;
+        padding: 0.5em 0 0.5em 0.5em;
+        margin-right: 10%;
+        text-align: start;
+        background-color: #FFFDD0;
+    }
+
+    .container {
+        background-color: #ffffffd9;
+        padding: 1em 0 1em 0;
+        width: 15em;
+    }
+
+    #data {
+        grid-area: 1/1;
+        align-self: start;
+        justify-self: start;
+        top: 4em;
+        left: 2em;
+        border-bottom: 0;
+    }
+
+    #weather {
+        grid-area: 1/1;
+        align-self: end;
+        justify-self: end;
+        bottom: 4em;
+        right: 2em;
+    }
+
+    #emoji::before {
+        content: "☀️";
+    }
+
+    #weather img {
+        display: none;
+    }
+}
