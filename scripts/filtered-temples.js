@@ -3,6 +3,7 @@ const hamButton = document.getElementById('hamButton');
 const headerText = document.querySelector('.headerText');
 const nav = document.querySelector('.navigation');
 const templeContainer = document.querySelector('.container');
+const pageHeader = document.querySelector('#page');
 const home = document.getElementById('home');
 const old = document.getElementById('old');
 const newTemple = document.getElementById('new');
@@ -96,6 +97,9 @@ const temples = [
 
 // Create a function that creates all the temple objects for view
 function createTempleDiv(templeList){
+  // Before the loop clear the children from the container
+  templeContainer.replaceChildren();
+
   // Use a for loop through the object
   for (let i = 0; i < templeList.length; i++) {
     // Obtain all the values from the object
@@ -147,6 +151,31 @@ function createTempleDiv(templeList){
   }
 };
 
+// Filter the list into the proper types
+function filterSmall(){
+  let smallTemples = temples.filter(temple => temple.area < 10000);
+
+  return smallTemples;
+};
+
+function filterLarge(){
+  let largeTemples = temples.filter(temple => temple.area > 90000);
+
+  return largeTemples;
+};
+
+function filterOld(){
+  let oldTemples = temples.filter(temple => parseInt(temple.dedicated.slice(0,4)) < 1900);
+
+  return oldTemples;
+};
+
+function filterNew(){
+  let newTemples = temples.filter(temple => parseInt(temple.dedicated.slice(0,4)) > 2000);
+
+  return newTemples;
+};
+
 // Create a click event on the hamButton
 hamButton.addEventListener('click', () => {
     nav.classList.toggle('open');
@@ -161,6 +190,8 @@ home.addEventListener('click', () => {
   newTemple.setAttribute('class', '');
   large.setAttribute('class', '');
   small.setAttribute('class', '');
+  pageHeader.textContent = 'Home';
+  createTempleDiv(temples);
 });
 
 old.addEventListener('click', () => {
@@ -169,6 +200,8 @@ old.addEventListener('click', () => {
   newTemple.setAttribute('class', '');
   large.setAttribute('class', '');
   small.setAttribute('class', '');
+  pageHeader.textContent = 'Old';
+  createTempleDiv(filterOld());
 });
 
 newTemple.addEventListener('click', () => {
@@ -177,6 +210,8 @@ newTemple.addEventListener('click', () => {
   newTemple.setAttribute('class', 'active');
   large.setAttribute('class', '');
   small.setAttribute('class', '');
+  pageHeader.textContent = 'New';
+  createTempleDiv(filterNew());
 });
 
 large.addEventListener('click', () => {
@@ -185,6 +220,8 @@ large.addEventListener('click', () => {
   newTemple.setAttribute('class', '');
   large.setAttribute('class', 'active');
   small.setAttribute('class', '');
+  pageHeader.textContent = 'Large';
+  createTempleDiv(filterLarge());
 });
 
 small.addEventListener('click', () => {
@@ -193,6 +230,8 @@ small.addEventListener('click', () => {
   newTemple.setAttribute('class', '');
   large.setAttribute('class', '');
   small.setAttribute('class', 'active');
+  pageHeader.textContent = 'Small';
+  createTempleDiv(filterSmall());
 });
 
 // Call the function to be used at the start
