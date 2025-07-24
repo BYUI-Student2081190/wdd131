@@ -34,7 +34,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
     templeName: "Yigo Guam",
@@ -75,7 +75,7 @@ const temples = [
     dedicated: "1999, November, 20-21",
     area: 33800,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/32ee7c27ae82d11691a7d95ad36c350935bfdacf/full/1920%2C/0/default"
+    "https://www.churchofjesuschrist.org/imgs/6dcc34be2bfb4a3c2fc01cefb08f51404ef65d4d/full/400,250/0/default"
   },
   {
     templeName: "London England Temple",
@@ -83,7 +83,7 @@ const temples = [
     dedicated: "1958, September, 7-9",
     area: 42652,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/3a576e7992d0ccd390d9019e33265ddad023f556/full/1920%2C/0/default"
+    "https://www.churchofjesuschrist.org/imgs/3a576e7992d0ccd390d9019e33265ddad023f556/full/400,250/0/default"
   },
   {
     templeName: "Oklahoma City Oklahoma Temple",
@@ -91,7 +91,7 @@ const temples = [
     dedicated: "2000, July, 30",
     area: 10890,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/94c4205c68ebf5c9680eea174c808221daed27ae/full/1920%2C/0/default"
+    "https://www.churchofjesuschrist.org/imgs/94c4205c68ebf5c9680eea174c808221daed27ae/full/400,250/0/default"
   }
 ];
 
@@ -111,24 +111,17 @@ function createTempleDiv(templeList){
 
     // Create the elements
     let newDiv = document.createElement('div');
-    let newHeader = document.createElement('h3');
-    let newDescripList = document.createElement('dl');
-    let newTempleLocation = document.createElement('dt');
-    let newTempleLocationText = document.createElement('dd');
-    let newTempleDedicated = document.createElement('dt');
-    let newTempleDedicatedText = document.createElement('dd');
-    let newTempleArea = document.createElement('dt');
-    let newTempleAreaText = document.createElement('dd');
+    let newHeader = document.createElement('h3');  
+    let newTempleLocationText = document.createElement('p');
+    let newTempleDedicatedText = document.createElement('p');
+    let newTempleAreaText = document.createElement('p');
     let newImg = document.createElement('img');
 
     // Set the attributes and text of the elements
     newHeader.textContent = templeName;
-    newTempleLocation.textContent = "Location:";
-    newTempleLocationText.textContent = location;
-    newTempleDedicated.textContent = "Dedicated:";
-    newTempleDedicatedText.textContent = dedicated;
-    newTempleArea.textContent = "Area:";
-    newTempleAreaText.textContent = `${area} sq ft`;
+    newTempleLocationText.innerHTML = `<strong>Location:</strong> ${location}`;
+    newTempleDedicatedText.innerHTML = `<strong>Dedicated:</strong> ${dedicated}`;
+    newTempleAreaText.innerHTML = `<strong>Area:</strong> ${area} sq ft`;
     newImg.src = imageUrl;
     newImg.alt = templeName;
     newImg.width = 400;
@@ -136,15 +129,10 @@ function createTempleDiv(templeList){
     newImg.loading = "lazy";
 
     // Append the elements
-    newDescripList.appendChild(newTempleLocation);
-    newDescripList.appendChild(newTempleLocationText);
-    newDescripList.appendChild(newTempleDedicated);
-    newDescripList.appendChild(newTempleDedicatedText);
-    newDescripList.appendChild(newTempleArea);
-    newDescripList.appendChild(newTempleAreaText);
-
     newDiv.appendChild(newHeader);
-    newDiv.appendChild(newDescripList);
+    newDiv.appendChild(newTempleLocationText);
+    newDiv.appendChild(newTempleDedicatedText);
+    newDiv.appendChild(newTempleAreaText);
     newDiv.appendChild(newImg);
 
     templeContainer.appendChild(newDiv);

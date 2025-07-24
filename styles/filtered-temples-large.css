@@ -1,5 +1,5 @@
 /* Large View for Site */
-@media screen and (min-width: 910px) {
+@media screen and (min-width: 750px) {
     header {
         display: flex;
         justify-content: space-between;
