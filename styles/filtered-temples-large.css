@@ -1,0 +1,37 @@
+/* Large View for Site */
+@media screen and (min-width: 910px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        display: block;
+    }
+
+    header h1.noShow {
+        display: block;
+    }
+
+    #hamButton {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav.open {
+        display: block;
+        margin-top: 0;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
