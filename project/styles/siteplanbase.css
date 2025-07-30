@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #8A9A5B;
+    --background-color: #013220;
+    --secondary-color: #a36a29;
+    --basic-background-color: #fff;
+    --font-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+footer,
+#font-one {
+    font-family: "Rethink Sans", sans-serif;
+}
+
+body {
+    font-family: "Intel One Mono", monospace;
+    color: var(--font-color);
+}
+
+header,
+main,
+footer {
+    margin: 1rem 0;
+}
+
+header {
+    text-align: center;
+    font-size: x-large;
+    background-color: var(--primary-color);
+    margin-top: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--background-color);
+}
+
+header h2 {
+    margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    margin-bottom: 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--background-color);
+}
+
+footer p {
+    margin-top: 0.5rem;
+}
+
+main {
+    padding: 0.5rem 25%;
+}
+
+.section {
+    margin: 5rem 0;
+}
+
+.section h2 {
+    margin: 0.5rem 0;
+}
+
+.section p,
+.section ul {
+    margin-left: 1.5rem;
+}
+
+.section dl {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 800px;
+}
+
+.section p,
+.section li,
+.section dd {
+    margin-top: 0.5rem;
+}
+
+.section dt {
+    width: 25px;
+    text-align: right;
+    margin-top: 3rem;
+    margin-right: 0;
+}
+
+.section dd {
+    width: 90%;
+    text-align: left;
+    margin-left: 0.5rem;
+    max-width: 850px;
+}
+
+.section dl p {
+    margin-left: 0;
+}
+
+.color-box {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+}
+
+#mossgreen {
+    background-color: var(--primary-color);
+}
+
+#darkgreen {
+    background-color: var(--background-color);
+}
+
+#chocobrown {
+    background-color: var(--secondary-color);
+}
+
+#white {
+    background-color: var(--basic-background-color);
+}
+
+#black {
+    background-color: var(--font-color);
+}
+
+#wireframe-section {
+    text-align: center;
+}
+
+#wireframe-section h2 {
+    text-align: start;
+}
+
+#wireframe-section img,
+#wireframe-section h3 {
+    margin-top: 1rem;
+}
+
+#small-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+#large-image {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}

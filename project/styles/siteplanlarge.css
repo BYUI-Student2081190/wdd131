@@ -1,0 +1,10 @@
+@media screen and (min-width: 870px) {
+    .section dl {
+        flex-direction: row;
+    }
+
+    .section dt {
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
