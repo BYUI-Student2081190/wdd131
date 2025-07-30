@@ -20,13 +20,13 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <label for="productName" class="fancyLabel">Product Name</label>
+                <label for="productName" class="fancyLabel">Product Name <span class="required">(Required)</span></label>
                 <select name="product" id="productName" required>
                     <option value="" selected disabled>Choose a Product...</option>
                 </select>
             </fieldset>
             <fieldset>
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating <span class="required">(Required)</span></legend>
                 <div class="radioGroup">
                     <label><input type="radio" id="starOne" name="rating" value="1" required>&star;</label>
                     <label><input type="radio" id="starTwo" name="rating" value="2" required>&star; &star;</label>
@@ -36,11 +36,11 @@
                 </div>
             </fieldset>
             <fieldset>
-                <label for="installDate" class="fancyLabel">Date of Installation</label>
+                <label for="installDate" class="fancyLabel">Date of Installation <span class="required">(Required)</span></label>
                 <input type="date" id="installDate" name="installDate" required>
             </fieldset>
             <fieldset>
-                <legend>Which features did you find useful in the product?</legend>
+                <legend>Which features did you find useful in the product? <span class="optional">(Optional)</span></legend>
                 <div><i>(Check all that apply)</i></div>
                 <div class="checkBoxDiv">
                     <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>

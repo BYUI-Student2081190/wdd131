@@ -133,6 +133,11 @@ form textarea {
     height: 150px;
 }
 
+form .required {
+    color: var(--additional-font-color);
+    font-size: small;
+}
+
 form .optional {
     color: var(--additional-font-color);
     font-size: small;
