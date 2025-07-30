@@ -20,7 +20,7 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <legend>Product Name</legend>
+                <label for="productName" class="fancyLabel">Product Name</label>
                 <select name="product" id="productName" required>
                     <option value="" selected disabled>Choose a Product...</option>
                 </select>
@@ -36,7 +36,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Date of Installation</legend>
+                <label for="installDate" class="fancyLabel">Date of Installation</label>
                 <input type="date" id="installDate" name="installDate" required>
             </fieldset>
             <fieldset>
@@ -50,11 +50,11 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Written Review <span class="optional">(Optional)</span></legend>
+                <label for="writtenReview" class="fancyLabel">Written Review <span class="optional">(Optional)</span></label>
                 <textarea id="writtenReview" name="writtenReview"></textarea>
             </fieldset>
             <fieldset>
-                <legend>Your Name <span class="optional">(Optional)</span></legend>
+                <label for="authorName" class="fancyLabel">Your Name <span class="optional">(Optional)</span></label>
                 <input type="text" id="authorName" name="authorName">
             </fieldset>
             <fieldset>

@@ -25,6 +25,7 @@ h2,
 h3,
 legend,
 form input[type='submit'],
+form .fancyLabel,
 form div i,
 footer p,
 footer span {
@@ -82,9 +83,15 @@ form fieldset {
     border: none;
 }
 
-form legend {
+form legend,
+form .fancyLabel {
     font-size: large;
     font-weight: bold;
+}
+
+form .fancyLabel {
+    display: block;
+    margin-bottom: 1rem;
 }
 
 form textarea,
@@ -137,13 +144,12 @@ form input[type="submit"] {
     margin-top: 2rem;
     padding: 0.8rem;
     font-size: large;
-    background-color: var(--submit-color);
-    color: var(--header-footer-font-color);
+    background-color: var(--header-footer-font-color);
+    color: var(--font-color);
     border: 1px solid var(--font-color);
 }
 
 form input[type="submit"]:hover {
-    background-color: var(--header-footer-font-color);
     color: var(--additional-font-color);
 }
 
