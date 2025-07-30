@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #1c0029;
+    --secondary-color: #dbdbdb;
+    --header-footer-font-color: #fff;
+    --font-color: #141313;
+    --additional-font-color: #0b4182;
+    --submit-color: #afafaf;
+    --border-header-footer-color: #07000a;
+    --border-form-color: #54605f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+legend,
+form input[type='submit'],
+form div i,
+footer p,
+footer span {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Mono", monospace;
+    color: var(--font-color);
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+header,
+footer {
+    text-align: center;
+    color: var(--header-footer-font-color);
+    background-color: var(--primary-color);
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 1px solid var(--border-header-footer-color);
+    font-size: large;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+    min-height: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    margin-top: 2rem;
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+    border: 1px solid var(--border-form-color);
+    background-color: var(--secondary-color);
+}
+
+form fieldset {
+    margin: 2rem;
+    border: none;
+}
+
+form legend {
+    font-size: large;
+    font-weight: bold;
+}
+
+form textarea,
+form input[type="text"],
+form input[type="date"],
+form select {
+    width: 100%;
+    max-width: 600px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+form .radioGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    transform: scale(2);
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+form .checkBoxDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+form textarea {
+    padding: 0.5rem;
+    height: 150px;
+}
+
+form .optional {
+    color: var(--additional-font-color);
+    font-size: small;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    font-size: large;
+    background-color: var(--submit-color);
+    color: var(--header-footer-font-color);
+    border: 1px solid var(--font-color);
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--header-footer-font-color);
+    color: var(--additional-font-color);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    border-top: 1px solid var(--border-header-footer-color);
+    font-weight: bold;
+}
