@@ -6,11 +6,65 @@
     <title>WDD131 - Final Project - Christopher Scott</title>
     <meta name="description" content="WDD131 Final Project site for Lode Stone Valley Country Club. A fake golf course. This is the prices page.">
     <meta name="author" content="Christopher Scott">
-    <!--Add the fonts, styles, and scripts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono&family=Rethink+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/project-prices.js" defer></script>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="header-top">
+            <a href="project-home.html"><img src="images/project-logo.jpg" alt="Lode Stone Valley Logo" loading="lazy"></a>
+            <h1>Lode Stone Valley Country Club</h1>
+        </div>
+        <div class="navigation">
+            <nav aria-label="Site Navigation">
+                <ul>
+                    <li>
+                        <a href="project-home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="project-prices.html">Prices</a>
+                    </li>
+                    <li>
+                        <a href="project-form.html">Membership</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <h2>Prices</h2>
+            <div>
+                <h3>How This Table Works</h3>
+                <p>
+                    This table allows you to interact with it and view an idea of what prices could
+                    look like dependant on the membership you decide to purchase. Just tap a column
+                    header first, then select the row headers you would like to add to view the estimate.
+                    (Note: You must first select a column then you can select a row.)
+                </p>
+            </div>
+            <div id="prices-table-container"></div>
+            <p class="italic-p">Price estimate based on selected options: $<span id="estimate"></span></p>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Link"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x-icon.svg" alt="Twitter X Link"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Link"></a>
+        </div>
+        <div class="footer-information">
+            <p>
+            &copy;<span id="currentyear"></span> - Christopher Scott - Utah
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>

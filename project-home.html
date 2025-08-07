@@ -6,11 +6,18 @@
     <title>WDD131 - Final Project - Christopher Scott</title>
     <meta name="description" content="WDD131 Final Project site for Lode Stone Valley Country Club. A fake golf course. This is the home page.">
     <meta name="author" content="Christopher Scott">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono&family=Rethink+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-top">
-            <img src="images/project-logo.jpg" alt="Lode Stone Valley Logo" loading="lazy">
+            <a href="project-home.html"><img src="images/project-logo.jpg" alt="Lode Stone Valley Logo" loading="lazy"></a>
             <h1>Lode Stone Valley Country Club</h1>
         </div>
         <div class="navigation">
@@ -29,7 +36,51 @@
             </nav>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <picture>
+            <source srcset="images/golf-course-by-river.webp" media="(min-width: 500px)">
+            <img src="images/golf-ball-by-hole.webp" alt="Golf Course Image" loading="lazy">
+        </picture>
+        <div class="main-content">
+            <h2>Home</h2>
+            <div class="home-content-body">
+                <h3>About Us</h3>
+                <p>
+                    Lode Stone Valley Country Club was established in 1935 by George Stone, 
+                    an active and passionate golfer. Today, thanks to his guidance and direction, 
+                    the course now features some of the finest green grass a golfer could ask for. 
+                    Our green is the greenest you could ever lay eyes on. The fairways are both 
+                    difficult and rewarding when you make a successful drive. We're excited to 
+                    see if you can conquer our well-maintained and challenging course.
+                </p>
+                <h3>Tee Times</h3>
+                <p class="bold-p">
+                    Open During Summer:
+                </p>
+                <p>
+                    6:00AM - 7:00PM
+                </p>
+                <p>
+                    Monday - Saturday
+                </p>
+                <p>
+                    Tee Times start at 6:00AM and a new Tee Time opens every 20 mins.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Link"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x-icon.svg" alt="Twitter X Link"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Link"></a>
+        </div>
+        <div class="footer-information">
+            <p>
+            &copy;<span id="currentyear"></span> - Christopher Scott - Utah
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #8A9A5B;
+    --background-color: #013220;
+    --secondary-color: #a36a29;
+    --basic-background-color: #fff;
+    --font-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+footer {
+    font-family: "Rethink Sans", sans-serif;
+}
+
+body {
+    font-family: "Intel One Mono", monospace;
+    color: var(--font-color);
+}
