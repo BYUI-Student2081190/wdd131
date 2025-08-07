@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/project-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/project.js" defer></script>
-    <script src="scripts/project-form.js" defer></script>
+    <script src="scripts/project-thank-you.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,7 +37,20 @@
             </nav>
         </div>
     </header>
-    <main></main>
+    <main>
+        <picture>
+            <source srcset="images/golf-course-by-river.webp" media="(min-width: 500px)">
+            <img src="images/golf-ball-by-hole.webp" alt="Golf Course Image" loading="lazy">
+        </picture>
+        <div class="main-content">
+            <h2>Thank You for Your Purchase!</h2>
+            <p>
+                Thank you so much for your purchase! Your
+                current membership is <span id="currentMem"></span>
+                and you have gotten <span id="memCount"></span>!
+            </p>
+        </div>
+    </main>
     <footer>
         <div class="social">
             <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Link"></a>
