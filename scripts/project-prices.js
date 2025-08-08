@@ -27,7 +27,7 @@ function createTable() {
     const thead = document.createElement('thead');
     const tableTitle = document.createElement('tr');
     const tableTitleContent = document.createElement('th');
-    tableTitleContent.setAttribute("colspan", "4");
+    tableTitleContent.setAttribute("colspan", "5");
     tableTitleContent.setAttribute("scope", "colgroup");
     tableTitleContent.textContent = "Membership Pricing";
     tableTitle.append(tableTitleContent);

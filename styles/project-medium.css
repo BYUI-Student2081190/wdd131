@@ -8,24 +8,22 @@
     --navigation-color: #623918;
 }
 
-@media screen and (min-width: 1000px) {
-
-    .navigation button {
-        display: none;
-    }
-
-    .navigation nav {
-        display: block;
-    }
-    .navigation ul {
-        flex-direction: row;
-    }
-
-    .navigation ul li {
-        margin: 0;
-    }
-
+@media screen and (min-width: 500px) {
+    
     header .header-top {
         flex-direction: row;
     }
+
+    .main-content {
+        width: 80%;
+    }
+
+    .price-table td{
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
 }

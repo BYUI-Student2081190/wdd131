@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono&family=Rethink+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-medium.css">
     <link rel="stylesheet" href="styles/project-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/project.js" defer></script>
@@ -22,7 +23,8 @@
             <h1>Lode Stone Valley Country Club</h1>
         </div>
         <div class="navigation">
-            <nav aria-label="Site Navigation">
+            <button type="button" aria-label="Open and Close Nav" id="hamButton"></button>
+            <nav aria-label="Site Navigation" id="navigation">
                 <ul>
                     <li>
                         <a href="project-home.html">Home</a>
@@ -54,7 +56,7 @@
                 </p>
             </div>
             <div id="prices-table-container"></div>
-            <p class="italic-p">Price estimate based on selected options: $<span id="estimate"></span></p>
+            <p id="estimate-price-p" class="italic-p">Price estimate based on selected options: $<span id="estimate"></span></p>
         </div>
     </main>
     <footer>

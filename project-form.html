@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono&family=Rethink+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-medium.css">
     <link rel="stylesheet" href="styles/project-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/project.js" defer></script>
@@ -22,7 +23,8 @@
             <h1>Lode Stone Valley Country Club</h1>
         </div>
         <div class="navigation">
-            <nav aria-label="Site Navigation">
+            <button type="button" aria-label="Open and Close Nav" id="hamButton"></button>
+            <nav aria-label="Site Navigation" id="navigation">
                 <ul>
                     <li>
                         <a href="project-home.html">Home</a>
@@ -46,6 +48,7 @@
             <h2>Obtain Membership</h2>
             <form id="membershipForm" method="get" action="project-thank-you.html">
                 <fieldset>
+                    <legend>Your Information</legend>
                     <label for="fname">First Name <span class="required">(Required)</span></label>
                     <input type="text" id="fname" name="fname" required>
                     <label for="lname">Last Name <span class="required">(Required)</span></label>
@@ -54,6 +57,7 @@
                     <input type="email" id="email" name="email" required>
                 </fieldset>
                 <fieldset>
+                    <legend>Membership Options</legend>
                     <label for="membershipType">Membership Type <span class="required">(Required)</span></label>
                     <select name="membershipType" id="membershipType" required>
                         <option value="" selected disabled>-- Choose a Membership --</option>
@@ -61,9 +65,9 @@
                     <div id="membershipDetails"></div>
                 </fieldset>
                 <fieldset>
-                    <h2>Total Price:</h2>
+                    <legend>Total Price:</legend>
                     <p id="membershipPrice">$0.00 per Month</p>
-                    <p class="notice">(Note: This is not a real transaction, this is a fake site.)</p>
+                    <p class="notice italic-p">(Note: This is not a real transaction, this is a fake site.)</p>
                 </fieldset>
                 <fieldset>
                     <input type="submit" value="Obtain Membership">
